@@ -1,0 +1,131 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { background: #003366; color: white; padding: 10px; }
+nav a { margin: 0 10px; color: white; text-decoration: none; }
+main { padding: 20px; }
+footer { background: #003366; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+  }
+  
+  .product-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-card img {
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+    
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    object-fit: cover;
+  }
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+  .call-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  .call-button:hover {
+    background: darkgreen;
+  }
+  .map-container {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .inquiry-form {
+    margin-top: 20px;
+    max-width: 500px;
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .inquiry-form input,
+  .inquiry-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .inquiry-form button {
+    background-color: #003366;
+    color: white;
+    padding: 25px 36px;        /* Increased vertical padding */
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    min-height: 90px;          /* Ensures minimum button height */
+  }
+  
+  .inquiry-form button:hover {
+    background-color: #005599;
+  }
+  
+  .inquiry-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+}
